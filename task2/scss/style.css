@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  color: #c09c6a;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 64px;
+  font-family: serif;
+  color: #aaaaaa;
+}
+
+h5 {
+  color: #d4aa6f;
+  margin-top: 25px;
+  font-family: sans-serif;
+  font-style: oblique;
+  font-size: 16px;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+#master {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+p {
+  padding: 0 50px;
+  color: #727070;
+  line-height: 1.8;
+  margin: 50px 0 20px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

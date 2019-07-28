@@ -2,7 +2,6 @@
 
 let students = []
 let inputs = document.getElementsByClassName("student-input");
-// let TdItems = "";
 
 let stuName = document.querySelector("#name");
 let stuSurname = document.querySelector("#surname");
@@ -22,25 +21,6 @@ function Student(name, surname, email, birthday) {
     this.birthday = birthday;
 };
 
-function checkEmail() {
-    var email = document.getElementById('email');
-    var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!filter.test(email.value)) {
-        alert('Please provide a valid email address');
-        email.focus;
-        return false;
-    }
-}
-
-function emptyalert() {
-    if(document.getElementById("name").value == 0,document.getElementById("surname").value == 0,document.getElementById("email").value == 0,document.getElementById("birthday").value == 0)
-   {
-       alert("Please be sure  you fill them all")
-   }  else{
-       addStudent()
-       
-   } 
-   }
 
 function addStudent() {
     let student = new Student(stuName.value, stuSurname.value, stuEmail.value, stuBirthday.value);
@@ -55,6 +35,36 @@ function addStudent() {
                     <td>${stuBirthday.value}</td>`
                    
 }
+
+
+
+// Check Valid Email
+
+function checkEmail() {
+    var email = document.getElementById('email');
+    var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!filter.test(email.value)) {
+        alert('Please provide a valid email address');
+        email.focus;
+        return false;
+    }
+}
+
+// Check all Cells Empty or Filled
+
+function emptyalert() {
+    if(document.getElementById("name").value == 0,document.getElementById("surname").value == 0,document.getElementById("email").value == 0,document.getElementById("birthday").value == 0)
+   {
+       alert("Please be sure  you fill them all")
+   }  else{
+       addStudent()
+       
+   } 
+   }
+
+
+
+
 
 
 
